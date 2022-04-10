@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/dark"
+    >
+
+    <include
+        android:id="@+id/app_Bar"
+        layout="@layout/appbar"
+        />
+
+    <ImageView
+        android:id="@+id/home_logo"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30sp"
+        android:layout_below="@id/app_Bar"
+        android:src="@drawable/mem_db_white"
+        android:contentDescription="@string/logo"
+        android:background="@color/dark"
+        />
+
+    <Button
+        android:id="@+id/ddr3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:text="@string/button_DDR3"
+        android:textSize="35sp"
+        android:backgroundTint="@color/grey"
+        />
+
+    <Button
+        android:id="@+id/ddr4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ddr3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:text="@string/button_DDR4"
+        android:textSize="35sp"
+        android:backgroundTint="@color/grey"
+        />
+
+    <Button
+        android:id="@+id/ddr5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ddr4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:text="@string/button_DDR5"
+        android:textSize="35sp"
+        android:backgroundTint="@color/grey"
+        />
+
+    <TextView
+        android:id="@+id/header_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_logo"
+        android:text="@string/home_header"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/dark"
+    >
+
+    <include
+        android:id="@+id/app_Bar2"
+        layout="@layout/appbar"
+        />
+
+    <TextView
+        android:id="@+id/banner_ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/app_Bar2"
+        android:text="@string/form_factor_header"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/dimmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/banner_ff"
+        android:layout_marginTop="100sp"
+        android:text="@string/dimm_button_text"
+        android:textSize="35sp"
+        android:backgroundTint="@color/grey"
+        />
+
+    <TextView
+        android:id="@+id/dimmBtnDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dimmBtn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dimm_button_header"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/soDimmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        android:layout_below="@+id/dimmBtnDescription"
+        android:text="@string/sodimm_button_text"
+        android:textSize="35sp"
+        android:backgroundTint="@color/grey"
+        />
+
+    <TextView
+        android:id="@+id/soDimmBtnDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soDimmBtn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sodimm_button_header"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/serverBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/soDimmBtnDescription"
+        android:layout_marginTop="100sp"
+        android:text="@string/server_button_text"
+        android:textSize="35sp"
+        android:backgroundTint="@color/grey"
+        />
+
+    <TextView
+        android:id="@+id/serverBtnDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/serverBtn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/server_button_header"
+        android:textColor="@color/white"
+        />
+
+    
+</RelativeLayout>
