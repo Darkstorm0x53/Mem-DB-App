@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MEM DB</string>
+    <string name="logo">app logo</string>
+    <string name="button_DDR3">DDR3</string>
+    <string name="button_DDR4">DDR4</string>
+    <string name="button_DDR5">DDR5</string>
+    <string name="home_header">Memory Version</string>
+    <string name="form_factor_header">Form Factor Platform</string>
+    <string name="dimm_button_header">Desktop</string>
+    <string name="sodimm_button_header">Laptop</string>
+    <string name="server_button_header">Server/Workstation</string>
+    <string name="dimm_button_text">DIMM</string>
+    <string name="sodimm_button_text">SO-DIMM</string>
+    <string name="server_button_text">ECC</string>
+    <string name="Account_text">Account</string>
+    <string name="login_banner">Account/email is only\nrequired for DB submission</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="email_hint">unclebob@gmail.com</string>
+    <string name="password_hint">abc123</string>
+    <string name="return_email">Authenticate</string>
+    <string name="instruct1">Sign in</string>
+    <string name="register_text">Sign Up</string>
+    <string name="invalid_username">Not a valid email</string>
+</resources>
