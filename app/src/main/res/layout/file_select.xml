@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_item_edit_content"
+    android:padding="40sp"
+    android:gravity="center"
+    android:background="@color/dark"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:id="@+id/file_path_title"
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:text="@string/file_path_text"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@color/grey"
+        />
+    <EditText
+        android:id="@+id/text_file_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/file_path_hint"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        android:background="@color/grey2"
+        android:inputType="text"
+        android:autofillHints="TODO" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_choose_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_choose_file"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/Azure"
+        />
+</LinearLayout>

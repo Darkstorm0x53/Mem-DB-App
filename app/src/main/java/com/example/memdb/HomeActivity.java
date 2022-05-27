@@ -33,12 +33,11 @@ public class HomeActivity extends AppCompatActivity {
         ddr3Btn.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view)
-            {
+            public void onClick(View view) {
                 Intent intent1;
                 intent1 = new Intent(HomeActivity.this,
                         FormFactorSelect.class);
-                startActivity(intent1);
+                HomeActivity.this.startActivity(intent1);
             }
         });
 
@@ -80,7 +79,7 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent4;
         intent4 = new Intent(HomeActivity.this,
                 AccountActivity.class);
-        startActivity(intent4);
+        //startActivity(intent4);
         return super.onOptionsItemSelected(item);
     }
 }

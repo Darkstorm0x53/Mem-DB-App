@@ -17,6 +17,8 @@ public class FormFactorSelect extends AppCompatActivity
     Button desktopBtn, laptopBtn, eccBtn; //declare buttons
     Toolbar toolbar; //declare toolbar
 
+    private String brand = "Micron", subBrand = "Crucial" , speed = "3400Mhz", die = "E die" ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -29,6 +31,18 @@ public class FormFactorSelect extends AppCompatActivity
 
         toolbar=findViewById(R.id.app_Bar2); //
         setSupportActionBar(toolbar);
+
+        // create dummy db
+       /* String OEMTemp, subBrandTemp, speedTemp, dieTemp;
+
+        OEMTemp = brand + "\n";
+        subBrandTemp = subBrand.toString() + "\n";
+        speedTemp = speed.toString() + "\n";
+        dieTemp = die.toString() + "\n";
+
+        DbHandler dbHandler = new DbHandler(FormFactorSelect.this);
+        dbHandler.insertUservalues(OEMTemp, subBrandTemp, speedTemp, dieTemp);
+*/
 
         desktopBtn.setOnClickListener(new View.OnClickListener()
         {
@@ -80,7 +94,7 @@ public class FormFactorSelect extends AppCompatActivity
         Intent intent4;
         intent4 = new Intent(FormFactorSelect.this,
                 AccountActivity.class);
-        startActivity(intent4);
+        //startActivity(intent4);
         return super.onOptionsItemSelected(item);
     }
 }

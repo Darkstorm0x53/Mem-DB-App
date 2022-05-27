@@ -22,4 +22,11 @@
     <string name="instruct1">Sign in</string>
     <string name="register_text">Sign Up</string>
     <string name="invalid_username">Not a valid email</string>
+    <string name="item_choose_file">Select File</string>
+    <string name="file_path_hint">/storage/emulated/0/Documents</string>
+    <string name="file_path_text">PATH</string>
+    <string name="OEM_example">Crucial</string>
+    <string name="subBrand_example">Ballistix</string>
+    <string name="speed_example">3200Mhz</string>
+    <string name="die_example">Micron E die</string>
 </resources>
