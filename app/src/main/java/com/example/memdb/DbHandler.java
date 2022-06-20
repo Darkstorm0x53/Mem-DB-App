@@ -6,15 +6,12 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 public class DbHandler extends SQLiteOpenHelper
 {
     //DB parameters
     private static final int DB_VERSION = 1;
-    private static final String DB_NAME = "DDR4-desktop.db";
-    private static final String TABLE_DDR4 = "DDR4-dtView";
+    private static final String DB_NAME = "DDR4_desktop.db";
+    private static final String TABLE_DDR4 = "DDR4_dtView";
     private static final String COLUMN_ID = "id";
     private static final String COLUMN_OEM = "brand";
     private static final String COLUMN_SubBRAND = "subBrand";
@@ -25,14 +22,14 @@ public class DbHandler extends SQLiteOpenHelper
 
     //queries
     private String dropTable = "DROP TABLE IF EXISTS ";
-    private String getTable = "SELECT name, location, designation FROM " + TABLE_DDR4;
+    private String getTable = "SELECT brand, subBrand, speed, die FROM " + TABLE_DDR4;
 
     public DbHandler(Context context)
     {
         super(context, DB_NAME, null, DB_VERSION);
     }
 
-    public void insertUservalues(String brand, String subBrand, String speed, String die )
+    public void insertUserValues(String brand, String subBrand, String speed, String die )
     {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -47,25 +44,11 @@ public class DbHandler extends SQLiteOpenHelper
     }
 
 
-    public ArrayList<HashMap<String, String>> getDb()
+    public Cursor getDb()
     {
         SQLiteDatabase db = this.getWritableDatabase();
-
-        ArrayList<HashMap<String, String>> MemList = new ArrayList<>();
-
         Cursor cursor = db.rawQuery(getTable, null);
-
-        while (cursor.moveToNext())
-        {
-            HashMap<String, String> memInfo = new HashMap<>();
-            memInfo.put("brand", cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_OEM)));
-            memInfo.put("subBrand", cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_SubBRAND)));
-            memInfo.put("speed", cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_SPEED)));
-            memInfo.put("die", cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DIE)));
-
-            MemList.add(memInfo);
-        }
-        return MemList;
+        return cursor;
     }
 
     @Override

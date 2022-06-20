@@ -60,7 +60,7 @@ public class HomeActivity extends AppCompatActivity {
             {
                 Intent intent3;
                 intent3 = new Intent(HomeActivity.this,
-                        FormFactorSelect.class);
+                        CreateDBTest.class);
                 startActivity(intent3);
             }
         });

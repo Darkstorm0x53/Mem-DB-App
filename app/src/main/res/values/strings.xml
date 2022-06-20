@@ -29,4 +29,6 @@
     <string name="subBrand_example">Ballistix</string>
     <string name="speed_example">3200Mhz</string>
     <string name="die_example">Micron E die</string>
+    <string name="Text_Header">Ram Details</string>
+    <string name="ButtonAdd">Add Ram entriy</string>
 </resources>
